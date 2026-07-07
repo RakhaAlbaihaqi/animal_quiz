@@ -138,13 +138,19 @@
         border: none;
         cursor: pointer;
         font-family: "Fredoka One", cursive;
+<<<<<<< HEAD
         font-size: 1rem;
         padding: 14px 10px;
+=======
+        font-size: 1.1rem;
+        padding: 16px 20px;
+>>>>>>> 77bbe34bb4825f0446d8478abaa51a23aa2122c6
         border-radius: 20px;
         transition: all 0.2s ease;
         position: relative;
         top: 0;
         width: 100%;
+<<<<<<< HEAD
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -173,6 +179,8 @@
         .btn-mode-sub {
           font-size: 0.68rem;
         }
+=======
+>>>>>>> 77bbe34bb4825f0446d8478abaa51a23aa2122c6
       }
       .btn-mode-sound {
         background: linear-gradient(135deg, #ffd166, #f5a623);
@@ -260,6 +268,7 @@
         background: var(--forest-deep);
         color: var(--forest-pale);
         font-family: "Fredoka One", cursive;
+<<<<<<< HEAD
         font-size: 1rem;
         padding: 8px 6px;
         text-align: center;
@@ -309,6 +318,17 @@
         height: auto;
         max-width: 100%;
         max-height: 260px;
+=======
+        font-size: 1.1rem;
+        padding: 8px;
+        text-align: center;
+      }
+
+      /* Image quiz - animal question image */
+      .question-animal-img {
+        width: 200px;
+        height: 200px;
+>>>>>>> 77bbe34bb4825f0446d8478abaa51a23aa2122c6
         object-fit: contain;
         border-radius: 20px;
         border: 5px solid var(--sunray);
@@ -316,11 +336,14 @@
           0 0 0 3px rgba(255, 209, 102, 0.4);
         animation: gentle-float 3s ease-in-out infinite;
       }
+<<<<<<< HEAD
       @media (max-width: 480px) {
         .question-animal-img {
           max-height: 200px;
         }
       }
+=======
+>>>>>>> 77bbe34bb4825f0446d8478abaa51a23aa2122c6
       @keyframes gentle-float {
         0%,
         100% {
@@ -335,6 +358,7 @@
       .text-choice {
         background: white;
         border: 4px solid var(--forest-pale);
+<<<<<<< HEAD
         border-radius: 18px;
         cursor: pointer;
         transition: all 0.2s ease;
@@ -342,12 +366,22 @@
         text-align: center;
         font-family: "Fredoka One", cursive;
         font-size: 1.1rem;
+=======
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        padding: 16px 12px;
+        text-align: center;
+        font-family: "Fredoka One", cursive;
+        font-size: 1.3rem;
+>>>>>>> 77bbe34bb4825f0446d8478abaa51a23aa2122c6
         color: var(--forest-deep);
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 8px;
       }
+<<<<<<< HEAD
       @media (max-width: 360px) {
         .text-choice {
           font-size: 0.85rem;
@@ -355,6 +389,8 @@
           gap: 5px;
         }
       }
+=======
+>>>>>>> 77bbe34bb4825f0446d8478abaa51a23aa2122c6
       .text-choice:hover {
         border-color: var(--forest-light);
         transform: translateY(-4px) scale(1.04);
@@ -770,18 +806,46 @@
         </div>
 
         <!-- Mode Selection -->
+<<<<<<< HEAD
         <div class="grid grid-cols-2 gap-3 mb-6">
           <button class="btn-mode btn-mode-sound" onclick="startQuiz('sound')">
             <div class="text-4xl mb-2">🔊</div>
             <div>Tebak Suara Hewan</div>
             <div class="btn-mode-sub">
+=======
+        <div class="grid grid-cols-1 gap-4 mb-6">
+          <button class="btn-mode btn-mode-sound" onclick="startQuiz('sound')">
+            <div class="text-4xl mb-2">🔊</div>
+            <div>Tebak Suara Hewan</div>
+            <div
+              style="
+                font-family: Nunito, sans-serif;
+                font-size: 0.85rem;
+                font-weight: 600;
+                opacity: 0.7;
+                margin-top: 4px;
+              "
+            >
+>>>>>>> 77bbe34bb4825f0446d8478abaa51a23aa2122c6
               Dengar suara → pilih gambarnya!
             </div>
           </button>
           <button class="btn-mode btn-mode-image" onclick="startQuiz('image')">
             <div class="text-4xl mb-2">🖼️</div>
             <div>Tebak Gambar Hewan</div>
+<<<<<<< HEAD
             <div class="btn-mode-sub">
+=======
+            <div
+              style="
+                font-family: Nunito, sans-serif;
+                font-size: 0.85rem;
+                font-weight: 600;
+                opacity: 0.7;
+                margin-top: 4px;
+              "
+            >
+>>>>>>> 77bbe34bb4825f0446d8478abaa51a23aa2122c6
               Lihat gambar → tulis namanya!
             </div>
           </button>
@@ -811,7 +875,11 @@
       id="screen-quiz"
       class="screen min-h-screen flex-col items-center justify-start py-8 px-4"
     >
+<<<<<<< HEAD
       <div class="max-w-4xl w-full">
+=======
+      <div class="max-w-2xl w-full">
+>>>>>>> 77bbe34bb4825f0446d8478abaa51a23aa2122c6
         <!-- Header bar -->
         <div class="glass-card mb-5 p-4 slide-in">
           <div class="flex items-center justify-between mb-3">
@@ -835,6 +903,7 @@
           </div>
         </div>
 
+<<<<<<< HEAD
         <!-- Question + Choices side by side (wraps automatically on narrow screens) -->
         <div class="quiz-layout slide-in">
           <!-- Question Card (kiri: suara/gambar) -->
@@ -880,6 +949,53 @@
           <div class="quiz-choices-panel" id="choices-grid">
             <!-- Populated by JS -->
           </div>
+=======
+        <!-- Question Card -->
+        <div
+          class="glass-card p-8 mb-5 text-center slide-in"
+          id="question-card"
+        >
+          <!-- Sound mode -->
+          <div id="sound-question">
+            <p class="text-green-700 fredoka text-2xl mb-2">
+              🌿 Suara hewan apa ini? 🌿
+            </p>
+            <p class="text-green-600 text-base font-semibold mb-6">
+              Dengarkan baik-baik, lalu pilih gambarnya!
+            </p>
+            <div class="flex flex-col items-center gap-3">
+              <button
+                class="btn-play"
+                id="btn-play"
+                onclick="playCurrentAnimalSound()"
+              >
+                ▶
+              </button>
+              <span class="text-green-700 font-bold text-sm" id="play-hint"
+                >Tekan untuk mendengar!</span
+              >
+            </div>
+          </div>
+          <!-- Image mode -->
+          <div id="image-question" style="display: none">
+            <p class="text-green-700 fredoka text-2xl mb-4">
+              🖼️ Hewan apa ini? 🖼️
+            </p>
+            <div class="flex justify-center">
+              <img
+                id="question-img"
+                src=""
+                alt="Hewan"
+                class="question-animal-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Choices Grid -->
+        <div class="grid grid-cols-2 gap-4 slide-in" id="choices-grid">
+          <!-- Populated by JS -->
+>>>>>>> 77bbe34bb4825f0446d8478abaa51a23aa2122c6
         </div>
       </div>
     </div>
@@ -1059,6 +1175,7 @@
         feedbackAudio = null;
       }
 
+<<<<<<< HEAD
       // Menunggu satu audio selesai (atau error) sebelum lanjut ke suara
       // berikutnya, supaya suara tidak bertumpuk/berbarengan.
       // fallbackMs adalah jaga-jaga kalau event 'ended' tidak pernah muncul.
@@ -1082,6 +1199,8 @@
         });
       }
 
+=======
+>>>>>>> 77bbe34bb4825f0446d8478abaa51a23aa2122c6
       // ==================== LEAVES & FIREFLIES ====================
       function spawnLeaves() {
         const leaves = ["🍃", "🌿", "🍀", "🌱"];
@@ -1157,12 +1276,19 @@
         document.getElementById("image-question").style.display =
           mode === "image" ? "block" : "none";
 
+<<<<<<< HEAD
         await new Promise((r) => setTimeout(r, 300));
         const quizStartAudio = playAudio(AUDIO.quizStart, {
           volume: 1.0,
           boost: 2.5,
         });
         await waitForAudioEnd(quizStartAudio, 4000);
+=======
+        setTimeout(
+          () => playAudio(AUDIO.quizStart, { volume: 1.0, boost: 2.5 }),
+          300
+        );
+>>>>>>> 77bbe34bb4825f0446d8478abaa51a23aa2122c6
 
         loadQuestion();
       }
@@ -1247,7 +1373,11 @@
       }
 
       // ==================== HANDLE ANSWER ====================
+<<<<<<< HEAD
       async function handleAnswer(chosenId, correctId) {
+=======
+      function handleAnswer(chosenId, correctId) {
+>>>>>>> 77bbe34bb4825f0446d8478abaa51a23aa2122c6
         if (answered) return;
         answered = true;
         stopAnimalAudio();
@@ -1285,6 +1415,7 @@
           const feedbackSrc =
             AUDIO.benar[Math.floor(Math.random() * AUDIO.benar.length)];
           feedbackAudio = playAudio(feedbackSrc);
+<<<<<<< HEAD
           showFeedback(true);
           // Tunggu suara feedback selesai dulu, baru mainkan suara berikutnya
           await waitForAudioEnd(feedbackAudio, 3000);
@@ -1297,10 +1428,23 @@
             const correctSound = playAudio(AUDIO.correct, { volume: 0.7 });
             await waitForAudioEnd(correctSound, 1500);
           }
+=======
+          // Play correct sound dan animal sound setelah feedback selesai
+          if (currentMode === "image") {
+            setTimeout(
+              () => playAudio(AUDIO.animals(correctId), { volume: 0.6 }),
+              600
+            );
+          } else {
+            setTimeout(() => playAudio(AUDIO.correct, { volume: 0.7 }), 600);
+          }
+          showFeedback(true);
+>>>>>>> 77bbe34bb4825f0446d8478abaa51a23aa2122c6
         } else {
           const feedbackSrc =
             AUDIO.salah[Math.floor(Math.random() * AUDIO.salah.length)];
           feedbackAudio = playAudio(feedbackSrc);
+<<<<<<< HEAD
           showFeedback(false);
           // Tunggu suara feedback selesai dulu, baru mainkan suara "salah"
           await waitForAudioEnd(feedbackAudio, 3000);
@@ -1319,6 +1463,23 @@
         } else {
           showResult();
         }
+=======
+          // Play wrong sound setelah feedback selesai
+          setTimeout(() => playAudio(AUDIO.wrong, { volume: 0.7 }), 600);
+          showFeedback(false);
+        }
+
+        setTimeout(() => {
+          hideFeedback();
+          stopAllAudio();
+          currentQuestionIndex++;
+          if (currentQuestionIndex < quizData.length) {
+            loadQuestion();
+          } else {
+            showResult();
+          }
+        }, 2200);
+>>>>>>> 77bbe34bb4825f0446d8478abaa51a23aa2122c6
       }
 
       // ==================== FEEDBACK ====================
@@ -1336,7 +1497,11 @@
       }
 
       // ==================== RESULT ====================
+<<<<<<< HEAD
       async function showResult() {
+=======
+      function showResult() {
+>>>>>>> 77bbe34bb4825f0446d8478abaa51a23aa2122c6
         stopAllAudio();
         stopAudio(bgmAudio);
         bgmAudio = null;
@@ -1379,6 +1544,7 @@
 
         showScreen("screen-result");
 
+<<<<<<< HEAD
         const starEls = document.querySelectorAll("#stars-container .star");
         starEls.forEach((el) => el.classList.remove("earned"));
 
@@ -1402,6 +1568,34 @@
         // Suara "menang" main terakhir, setelah suara bintang selesai
         if (stars >= 4) {
           playAudio(AUDIO.win, { volume: 1.0 });
+=======
+        // Play quiz end sound
+        let quizEndAudio = playAudio(AUDIO.quizEnd, {
+          volume: 1.0,
+          boost: 2.5,
+        });
+
+        const starEls = document.querySelectorAll("#stars-container .star");
+        starEls.forEach((el, i) => {
+          el.classList.remove("earned");
+          if (i < stars) {
+            setTimeout(() => {
+              el.classList.add("earned");
+            }, 1200 + i * 600);
+          }
+        });
+
+        setTimeout(() => {
+          stopAudio(quizEndAudio);
+          playAudio(AUDIO.stars[stars], { volume: 1.0 });
+        }, 1200 + Math.max(stars - 1, 0) * 600 + 300);
+
+        if (stars >= 4) {
+          setTimeout(() => {
+            stopAudio(quizEndAudio);
+            playAudio(AUDIO.win, { volume: 1.0 });
+          }, 1200 + stars * 600 + 400);
+>>>>>>> 77bbe34bb4825f0446d8478abaa51a23aa2122c6
         }
       }
 
